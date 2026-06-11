@@ -1,0 +1,19 @@
+# all ignore
+/*
+/.**
+
+### bash
+!/.config/bash/.bashrc
+
+
+### zsh
+!/.config/zsh/.zshrc
+
+
+### tmux
+!/.config/tmux/tmux.conf
+
+### etc
+!/README.md
+!/.gitignore
+
