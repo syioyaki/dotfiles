@@ -2,6 +2,10 @@
 /*
 /.**
 
+## not ignore
+!/.config/
+!/.config/**
+
 ### bash
 !/.config/bash/.bashrc
 
