@@ -1,6 +1,6 @@
 # all ignore
-/*
-/.**
+# /*
+# /.**
 
 ## not ignore
 !/.config/
