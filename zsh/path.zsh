@@ -1,7 +1,7 @@
-export PYENV_ROOT="${HOME}/.pyenv"
-export DENO_INSTALL="{$HOME}/.deno"
-export NIVM_DIR="/opt/nvim-linux-arm64"
-$PATH+=(
+export PYENV_ROOT="$HOME/.pyenv"
+export DENO_INSTALL="$HOME/.deno"
+export NIVM_DIR=/opt/nvim-linux-arm64
+path+=(
   /snap/bin(N-/)
   $HOME/.local/bin(N-/)
   $NVIM_DIR/bin(N-/)
@@ -10,7 +10,6 @@ $PATH+=(
   $DENO_INSTALL/bin(N-/)
   $PYENV_ROOT/bin(N-/)
   $HOME/.cargo/env(N-/)
-  
 )
 
 if type nvim > /dev/null; then
@@ -19,7 +18,7 @@ else
   export EDITOR=vim
 fi
 
-if [ -d "${PYENV_ROOT}" ]; then
+if [ -d $PYENV_ROOT ]; then
  eval "$(pyenv init -)"
  eval "$(pyenv virtualenv-init -)"
 fi
