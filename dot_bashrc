@@ -157,6 +157,6 @@ alias py3143="source ~/_dev/Python/py3143/bin/activate"
 export RUST_BACKTRACE=1
 export CARGO_BUILD_DIR="/tmp/cargo-installFpFHqr"
 export PATH="{$HOME}/bin/chezmoi:$PATH"
-eval "$(mise activate bash)"
+# eval "$(mise activate bash)"
 
 
