@@ -1,11 +1,11 @@
-export PYENV_ROOT="$HOME/.pyenv"
-export DENO_INSTALL="$HOME/.deno"
+export PYENV_ROOT=$HOME/.pyenv
+export DENO_INSTALL=$HOME/.deno
 export NIVM_DIR=/opt/nvim-linux-arm64
 path+=(
   /snap/bin(N-/)
   $HOME/.local/bin(N-/)
   $NVIM_DIR/bin(N-/)
-  $HOME/bin/chezmoi(N-/)
+  $HOME/bin(N-/)
   $HOME/.nvm(N-/)
   $DENO_INSTALL/bin(N-/)
   $PYENV_ROOT/bin(N-/)
