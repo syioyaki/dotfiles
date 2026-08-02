@@ -1,0 +1,48 @@
+local ls = require("luasnip")
+local s = ls.snippet
+local i = ls.insert_node
+local fmt = require("luasnip.extras.fmt").fmt
+
+local function today()
+  return s(nil, { i(1, os.date("%Y%m%d")) })
+end
+
+return {
+  s(
+    "qnote",
+    fmt(
+      [[
+        <!--
+        {}
+        -->
+      ]],
+      { i(1) }
+    )
+  ),
+  s(
+    "qressize",
+    fmt(
+      [[
+        Buffer.byteLength(JSON.stringify(
+        {}
+        ), 'utf8')
+        -->
+      ]],
+      { i(1) }
+    )
+  ),
+  s(
+    "details",
+    fmt(
+      [[
+        <details>
+          <summary>{}</summary>
+
+          {}
+
+        </details>
+      ]],
+      { i(1), i(0) }
+    )
+  ),
+}
