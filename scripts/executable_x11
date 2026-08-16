@@ -1,0 +1,8 @@
+termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"
+export PULSE_SERVER=127.0.0.1
+export GALLIUM_DRIVER=virpipe
+export MESA_GL_VERSION_OVERRIDE=4.0
+
+export XDG_CURRENT_DESKTOP=XFCE
+export XDG_MENU_PREFIX=xfce-
+export DESKTOP_SESSION=xfce
