@@ -1,0 +1,21 @@
+---
+snippets:
+  - name: "git"
+    keyword: "g"
+    snippet: "git"
+  - name: "git status"
+    keyword: "gs"
+    snippet: "git status"
+  - name: "git checkout"
+    keyword: "gc"
+    snippet: "git checkout"
+  - name: "git diff"
+    keyword: "gd"
+    snippet: "git diff"
+completions:
+  - name: "git branch"
+    patterns:
+      - '^git (checkout|switch) $'
+    sourceCommand: "git branch --format='%(refname:short)'"
+    options:
+      --prompt: "'Git Branch> '"

@@ -14,6 +14,12 @@ fi
 
 if [[ -r "/home/linuxbrew/.linuxbrew/bin/brew" ]]; then
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+  
+  # proot-distro環境でのみサンドボックスを無効にする
+  if [[ -n "${PROOT_L2S_DIR:-}" ]]; then
+    export HOMEBREW_NO_SANDBOX_LINUX=1
+  fi
+  
   export BREW_PREFIX=$(brew --prefix)
 fi
 

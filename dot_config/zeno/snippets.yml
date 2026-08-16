@@ -1,0 +1,16 @@
+---
+snippets:
+  - name: "null"
+    keyword: "null"
+    snippet: ">/dev/null 2>&1"
+    context:
+      lbuffer: '.+\s'
+  - name: "chezmoi"
+    keyword: "cm"
+    snippet: "chezmoi"
+  - name: "large separator"
+    keyword: "lsep"
+    snippet: "# ============================================================"
+  - name: "min separator"
+    keyword: "msep"
+    snippet: "# ------------------------------------------------------------"
