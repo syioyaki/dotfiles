@@ -22,6 +22,8 @@ fpath=(
 
 if [[ -d $BREW_PREFIX/share/zsh/site-functions ]]; then
   fpath=($BREW_PREFIX/share/zsh/site-functions $fpath)
+elif [[ -d /usr/share/zsh/site-functions ]]; then
+  fpath=(/usr/share/zsh/site-functions $fpath)
 fi
 
 # ------------------------------------------------------------
